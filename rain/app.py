@@ -14,7 +14,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(BASE_DIR, "rain_model.pkl")
+    model_path = os.path.join(BASE_DIR, "model.pkl")  # تعديل اسم الملف هنا
     locations_path = os.path.join(BASE_DIR, "locations.pkl")
 
     model = joblib.load(model_path)
